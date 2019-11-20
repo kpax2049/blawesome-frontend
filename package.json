@@ -1,6 +1,6 @@
 {
-  "name": "advanced-react-webpack-babel-setup",
-  "version": "1.0.0",
+  "name": "blawesome",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,9 +9,6 @@
     "build:analyze": "npm run build -- --env.addon=bundleanalyze --env.addon=bundlevisualizer",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
-  "keywords": [],
-  "author": "Robin Wieruch <opensource@rwieruch.com> (https://www.robinwieruch.de)",
-  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
