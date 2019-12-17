@@ -36,8 +36,18 @@
     "webpack-visualizer-plugin": "^0.1.11"
   },
   "dependencies": {
+    "@blueprintjs/core": "^3.22.2",
+    "@blueprintjs/datetime": "^3.15.1",
+    "@blueprintjs/icons": "^3.12.0",
+    "@blueprintjs/select": "^3.11.2",
+    "axios": "^0.19.0",
+    "mobx": "^5.15.1",
+    "mobx-react": "^6.1.4",
+    "mobx-react-lite": "^1.5.1",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    "react-cookie": "^4.0.1",
+    "react-dom": "^16.10.2",
+    "react-router-dom": "^5.1.2"
   }
 }
