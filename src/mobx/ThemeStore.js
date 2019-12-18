@@ -1,8 +1,8 @@
+/* eslint-disable lines-between-class-members */
 import { decorate, observable, action } from 'mobx';
 
 class ThemeStore {
   DARK_THEME = 'bp3-dark';
-
   LIGHT_THEME = 'bp3-light';
 
   constructor() {
