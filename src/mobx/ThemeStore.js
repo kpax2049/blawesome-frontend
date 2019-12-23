@@ -1,4 +1,3 @@
-/* eslint-disable lines-between-class-members */
 import { decorate, observable, action } from 'mobx';
 
 class ThemeStore {
