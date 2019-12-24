@@ -27,10 +27,8 @@ const App = observer(
 
     componentDidMount() {
       let isAuthenticated = false;
-      debugger;
       axios('api/auth')
         .then(response => {
-          debugger;
           if (response.status === 200) {
             if (
               response.data.success &&
@@ -74,7 +72,6 @@ const App = observer(
     };
     render() {
       const { loading, isAuthenticated } = this.state;
-      debugger;
       const childProps = {
         isAuthenticated,
         userHasAuthenticated: this.userHasAuthenticated,

@@ -43,7 +43,6 @@ class SignInForm extends React.Component {
       .then(response => {
         this.setState({ loading: false });
         if (response.data.success) {
-          debugger;
           window.location.reload();
         } else {
           this.setState({ signInFailed: true });

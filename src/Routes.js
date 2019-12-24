@@ -1,12 +1,12 @@
-import React from "react";
-import { Switch } from "react-router-dom";
-import AuthenticatedRoute from "./routes/AuthenticatedRoute";
-import UnauthenticatedRoute from "./routes/UnauthenticatedRoute";
-import SignInForm from "./signin/SignInForm";
-import Dashboard from "./dashboard/Dashboard";
-// eslint-disable-next-line react/prop-types
+import React from 'react';
+import { Switch } from 'react-router-dom';
+import AuthenticatedRoute from './routes/AuthenticatedRoute';
+import UnauthenticatedRoute from './routes/UnauthenticatedRoute';
+import SignInForm from './signin/SignInForm';
+import Dashboard from './dashboard/Dashboard';
+
 const Routes = ({ childProps }) => {
-  console.info("Routes");
+  console.info('Routes');
   return (
     <Switch>
       <UnauthenticatedRoute
@@ -20,7 +20,11 @@ const Routes = ({ childProps }) => {
         component={Dashboard}
         props={childProps}
       />
-      <AuthenticatedRoute path="/" component={Dashboard} props={childProps} />
+      <AuthenticatedRoute
+        path="/"
+        component={Dashboard}
+        props={childProps}
+      />
     </Switch>
   );
 };
