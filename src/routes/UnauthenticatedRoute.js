@@ -10,13 +10,13 @@ function getUrlParameter(name) {
     : decodeURIComponent(results[1].replace(/\+/g, ' '));
 }
 
-const UnauthenticatedRoute = route => {
+const UnauthenticatedRoute = (route) => {
   const { component: Component, props: childProps, ...rest } = route;
   const redirect = getUrlParameter('redirect');
   return (
     <Route
       {...rest}
-      render={props =>
+      render={(props) =>
         !childProps.isAuthenticated ? (
           <Component {...props} {...childProps} />
         ) : (

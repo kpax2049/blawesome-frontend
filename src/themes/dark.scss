@@ -5,10 +5,11 @@ $pt-font-family: 'Roboto', -apple-system, 'BlinkMacSystemFont',
     sans-serif !default;
 
 @import '~@blueprintjs/core/src/blueprint.scss';
+
+.bp3-dark.e-viewport {
+  background-color: #30303d;
+}
 .bp3-dark {
-  .e-viewport {
-    background-color: #30303d;
-  }
   .navbar {
     background-color: #182027;
     overflow: hidden;

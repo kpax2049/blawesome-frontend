@@ -5,11 +5,13 @@
     "es6": true,
     "node": true
   },
-  "extends": ["airbnb", "prettier"],
-  "plugins": ["prettier"],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
   "rules": {
-    "prettier/prettier": ["error"],
-    "import/no-extraneous-dependencies": 0,
-    "react/jsx-filename-extension": 0
+    "no-console": "off",
+    "no-unused-vars": "warn",
+    "no-debugger": "off"
   }
 }
